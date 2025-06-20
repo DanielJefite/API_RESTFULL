@@ -1,0 +1,17 @@
+version: '3.8'  # versão do compose, pode ser 3.8 ou superior
+
+services:
+  postgres:
+    image: postgres
+    container_name: nap01dev
+    environment:
+      POSTGRES_DB: disciplina_db
+      POSTGRES_USER: aula
+      POSTGRES_PASSWORD: senha
+    ports:
+      - "5428:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
