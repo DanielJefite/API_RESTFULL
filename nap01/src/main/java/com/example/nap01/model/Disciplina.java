@@ -14,7 +14,7 @@ public class Disciplina {
     private Double indice;
     private Integer codigo;
 
-    // Getters e Setters (Ctrl + N no IntelliJ ou use Lombok se souber)
+   
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
